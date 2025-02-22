@@ -3,7 +3,7 @@ import pygame
 
 class Ship:
 
-    """A class to menage the ship."""
+    """A class to manege the ship."""
 
     def __init__(self, ai_game):
         """Initilize the ship and set its starting position."""
@@ -12,6 +12,7 @@ class Ship:
 
         #load theship image and get its rect.
         self.image = pygame.image.load('images/ship.bmp')
+        print(self.image)
         self.rect = self.image.get_rect()
         #Start each new ship at the bottom center of the screen.
         self.rect.midbottom = self.screen_rect.midbottom
